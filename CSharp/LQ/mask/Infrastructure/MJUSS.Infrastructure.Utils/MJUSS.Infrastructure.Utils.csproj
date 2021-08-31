@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AMQPNetLite.Core" Version="2.4.1" />
+    <PackageReference Include="AMQPNetLite.Serialization" Version="2.4.1" />
+    <PackageReference Include="AMQPNetLite.WebSockets" Version="2.4.1" />
+    <PackageReference Include="Consul" Version="1.6.1.1" />
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="DotNetCore.NPOI" Version="1.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Xml" Version="3.1.13" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Orleans.OrleansConsulUtils" Version="3.4.3" />
+    <PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="3.4.3" />
+    <PackageReference Include="Microsoft.Orleans.OrleansTelemetryConsumers.Counters" Version="3.4.3" />
+    <PackageReference Include="MySql.Data" Version="8.0.23" />
+    <PackageReference Include="NEST" Version="6.8.6" />
+    <PackageReference Include="Npgsql" Version="5.0.3" />
+    <PackageReference Include="RabbitMQ.Client" Version="5.2.0" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+    <PackageReference Include="ZXing.Net" Version="0.16.6" />
+    <PackageReference Include="ZXing.Net.Bindings.Windows.Compatibility" Version="0.16.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MJUSS.Infrastructure.Core\MJUSS.Infrastructure.Core.csproj" />
+  </ItemGroup>
+</Project>

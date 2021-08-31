@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild" Version="3.4.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="3.4.3" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Infrastructure\MJUSS.Infrastructure.Core\MJUSS.Infrastructure.Core.csproj" />
+    <ProjectReference Include="..\MJ.DomainService.Mask.DTO\MJ.DomainService.Mask.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

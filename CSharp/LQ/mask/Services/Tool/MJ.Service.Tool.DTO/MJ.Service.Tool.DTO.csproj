@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="3.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Tool\" />
+  </ItemGroup>
+
+</Project>

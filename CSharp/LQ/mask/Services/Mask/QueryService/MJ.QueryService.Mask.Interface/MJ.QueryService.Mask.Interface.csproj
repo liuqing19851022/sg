@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild" Version="3.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Tool\MJ.Service.Tool.Interface\MJ.Service.Tool.Interface.csproj" />
+    <ProjectReference Include="..\MJ.QueryService.Mask.DTO\MJ.QueryService.Mask.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

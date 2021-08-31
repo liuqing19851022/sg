@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="linq2db" Version="3.2.3" />
+    <PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild" Version="3.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Orleans.OrleansProviders" Version="3.4.3" />
+    <PackageReference Include="Microsoft.Orleans.Runtime.Abstractions" Version="3.4.3" />
+    <PackageReference Include="Microsoft.Orleans.Transactions" Version="3.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\MJUSS.Infrastructure.Core\MJUSS.Infrastructure.Core.csproj" />
+    <ProjectReference Include="..\..\MJUSS.Infrastructure.Utils\MJUSS.Infrastructure.Utils.csproj" />
+  </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Infrastructure\MJUSS.Infrastructure.Utils\MJUSS.Infrastructure.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

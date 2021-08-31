@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild" Version="3.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Tool\MJ.Service.Tool.Interface\MJ.Service.Tool.Interface.csproj" />
+    <ProjectReference Include="..\..\Domain\MJ.Domain.Mask.Shared\MJ.Domain.Mask.Shared.csproj" />
+    <ProjectReference Include="..\MJ.QueryService.Mask.Interface\MJ.QueryService.Mask.Interface.csproj" />
+  </ItemGroup>
+
+</Project>

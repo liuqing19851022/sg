@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+option csharp_namespace = "EWeLinkGrpc";
+
+package ewelink;
+
+// 易微联 服务.
+service EWeLinkService {
+  //登录
+  rpc Login(LoginRequest) returns(LoginReply);
+
+  // 通断电
+  rpc SwitchPlug (SwitchPlugRequest) returns (SwitchPlugReply);
+
+}
+
+// 通断电操作请求
+message SwitchPlugRequest {
+  string Sn = 1;
+  int32 Model = 2;
+  bool On = 3;
+  repeated int32 Ports = 4;
+  string ApiKey = 5;
+  string Account = 6;
+}
+
+
+
+
+// 通断电操作响应
+message SwitchPlugReply {
+	bool LoginRequired = 1;
+}
+
+message LoginRequest {
+	string Account = 1;
+	string PassWord = 2;
+}
+
+message LoginReply {
+	
+	string AccessToken = 1;
+	string RefrehToken = 2;
+	string ApiKey = 3;
+	int32 error = 4;
+	string msg = 5;
+}

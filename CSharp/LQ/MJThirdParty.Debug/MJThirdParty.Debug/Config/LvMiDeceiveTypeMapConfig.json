@@ -1,0 +1,66 @@
+{
+  "Items": [
+    {
+      "ModelEnum": "单键墙壁开关",
+      "Models": [
+        "lumi.switch.n1acn1",
+        "lumi.switch.b1lacn01",
+        "lumi.switch.b1lacn02",
+        "lumi.switch.b1nacn02",
+        "lumi.ctrl_ln1.v1",
+        "lumi.ctrl_ln1.aq1",
+        "lumi.ctrl_ln1.es1",
+        "lumi.ctrl_neutral1.es1",
+        "lumi.ctrl_neutral1.v1",
+        "lumi.switch.b1nc01",
+        "lumi.switch.b1lc04",
+        "lumi.ctrl_neutral1.aq1",
+        "lumi.switch.acn044"
+      ]
+    },
+    {
+      "ModelEnum": "双键墙壁开关",
+      "Models": [
+
+        "lumi.ctrl_ln2.v1",
+        "lumi.ctrl_ln2.es1",
+        "lumi.ctrl_ln2.aq1",
+        "lumi.ctrl_neutral2.v1",
+        "lumi.ctrl_neutral2.aq1",
+        "lumi.switch.b2lacn02",
+        "lumi.switch.b2nacn02",
+        "lumi.switch.b2nc01",
+        "lumi.switch.b2lc04",
+        "lumi.switch.n2acn1",
+        "lumi.switch.acn045"
+      ]
+    },
+    {
+      "ModelEnum": "智能插座",
+      "Models": [
+        "lumi.plug.v1",
+        "lumi.plug.es1",
+        "lumi.86plug.v1",
+        "lumi.ctrl_86plug.v1",
+        "lumi.ctrl_86plug.es1",
+        "lumi.ctrl_86plug.aq1"
+      ]
+    },
+    {
+      "ModelEnum": "开关控制器",
+      "Models": [
+        "lumi.ctrl_dualchn.es1",
+        "lumi.relay.c2acn01"
+      ]
+    },
+    {
+      "ModelEnum": "三键墙壁开关",
+      "Models": [
+        "lumi.switch.l3acn3",
+        "lumi.switch.n3acn3",
+        "lumi.switch.acn040",
+        "lumi.switch.n4acn4"
+      ]
+    }
+  ]
+}

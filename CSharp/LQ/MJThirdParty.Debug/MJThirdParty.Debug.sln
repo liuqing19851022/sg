@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33927.249
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MJThirdParty.Debug", "MJThirdParty.Debug\MJThirdParty.Debug.csproj", "{38363275-C7BB-4EEA-9DCB-4F9620762D54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{B1B4B3D1-EBEB-4932-95E2-2CC2C68B0A7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Photonicat", "Photonicat\Photonicat.csproj", "{5D9F5994-0E4E-4957-B8B0-A38D26D93DD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{407AA24C-DBBC-4927-9D60-D67379E7CE85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MJ.Payment.Core", "X:\NetworkClient\ThirdParty\Payment\MJ.Payment.Core\MJ.Payment.Core.csproj", "{F55F35FF-EAE8-45F4-892D-A4788E28DE06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PushPgToES", "PushPgToES\PushPgToES.csproj", "{50D85FD3-8695-43B9-AA3E-21609462EED0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MJ.Payment.Imp.HuiLaiDian", "X:\NetworkClient\ThirdParty\Payment\Implement\MJ.Payment.Imp.HuiLaiDian\MJ.Payment.Imp.HuiLaiDian.csproj", "{E32FA123-441A-4B6C-9299-A6A47922BB7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38363275-C7BB-4EEA-9DCB-4F9620762D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38363275-C7BB-4EEA-9DCB-4F9620762D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38363275-C7BB-4EEA-9DCB-4F9620762D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38363275-C7BB-4EEA-9DCB-4F9620762D54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D9F5994-0E4E-4957-B8B0-A38D26D93DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9F5994-0E4E-4957-B8B0-A38D26D93DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9F5994-0E4E-4957-B8B0-A38D26D93DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9F5994-0E4E-4957-B8B0-A38D26D93DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55F35FF-EAE8-45F4-892D-A4788E28DE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55F35FF-EAE8-45F4-892D-A4788E28DE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55F35FF-EAE8-45F4-892D-A4788E28DE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55F35FF-EAE8-45F4-892D-A4788E28DE06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D85FD3-8695-43B9-AA3E-21609462EED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D85FD3-8695-43B9-AA3E-21609462EED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D85FD3-8695-43B9-AA3E-21609462EED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D85FD3-8695-43B9-AA3E-21609462EED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E32FA123-441A-4B6C-9299-A6A47922BB7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E32FA123-441A-4B6C-9299-A6A47922BB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E32FA123-441A-4B6C-9299-A6A47922BB7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E32FA123-441A-4B6C-9299-A6A47922BB7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{407AA24C-DBBC-4927-9D60-D67379E7CE85} = {B1B4B3D1-EBEB-4932-95E2-2CC2C68B0A7B}
+		{F55F35FF-EAE8-45F4-892D-A4788E28DE06} = {407AA24C-DBBC-4927-9D60-D67379E7CE85}
+		{E32FA123-441A-4B6C-9299-A6A47922BB7D} = {407AA24C-DBBC-4927-9D60-D67379E7CE85}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D71347D2-B360-4F7E-AD16-247251BCFD52}
+	EndGlobalSection
+EndGlobal

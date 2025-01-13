@@ -1,5 +1,6 @@
 using MJ.Payment.Core.Extentions;
 using MJ.Payment.Core.ViewModel;
+using MJSaas.ThirdParty.SmartSpeaker.XinBoRui;
 //using MJ.SmartPlug.EWeLink;
 //using MJ.SmartPlug.EWeLink.Grpc;
 
@@ -39,7 +40,7 @@ namespace MJThirdParty.Debug
 
             //builder.Services.AddEWeLinkGrpcService(builder.Configuration);
 
-            //builder.Services.AddXinBoRuiSpeaker(builder.Configuration);
+            builder.Services.AddXinBoRuiSpeaker(builder.Configuration);
 
             //builder.Services.AddServerSideBlazor();
 

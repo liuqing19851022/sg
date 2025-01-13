@@ -12,12 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Options\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="C:\WorkSpace\MJYXT\NetworkClient\ThirdParty\Payment\Implement\MJ.Payment.Imp.HuiLaiDian\MJ.Payment.Imp.HuiLaiDian.csproj" />
     <ProjectReference Include="C:\WorkSpace\MJYXT\NetworkClient\ThirdParty\Payment\MJ.Payment.Core\MJ.Payment.Core.csproj" />
+    <ProjectReference Include="G:\workspace\MJSaas\Services\SmartPlug\MJSaas.ThirdParty.SmartSpeaker.XinBoRui\MJSaas.ThirdParty.SmartSpeaker.XinBoRui.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,39 +1,39 @@
-//using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
-//using MJSaas.ThirdParty.SmartSpeaker.XinBoRui;
-//using MJSaas.ThirdParty.SmartSpeaker.XinBoRui.Respond;
-//namespace MJThirdParty.Debug.Controllers
-//{
-//    /// <summary>
-//    /// 喇叭
-//    /// </summary>
-//    [ApiController]
-//    [Route("[controller]/[action]")]
-//    public class SpeackerController : ControllerBase
-//    {
-//        private readonly ILogger<TongTongController> logger;
-//        private readonly XinBoRuiSpeaker speaker;
+using MJSaas.ThirdParty.SmartSpeaker.XinBoRui;
+using MJSaas.ThirdParty.SmartSpeaker.XinBoRui.Respond;
+namespace MJThirdParty.Debug.Controllers
+{
+    /// <summary>
+    /// 喇叭
+    /// </summary>
+    [ApiController]
+    [Route("[controller]/[action]")]
+    public class SpeackerController : ControllerBase
+    {
+        private readonly ILogger<SpeackerController> logger;
+        private readonly XinBoRuiSpeaker speaker;
 
-//        public SpeackerController(ILogger<TongTongController> logger, XinBoRuiSpeaker speaker)
-//        {
-//            this.logger = logger;
-//            this.speaker = speaker;
-//        }
+        public SpeackerController(ILogger<SpeackerController> logger, XinBoRuiSpeaker speaker)
+        {
+            this.logger = logger;
+            this.speaker = speaker;
+        }
 
-//        /// <summary>
-//        /// 获取token
-//        /// </summary>
-//        /// <param name="username"></param>
-//        /// <param name="password"></param>
-//        /// <returns></returns>
-//        [HttpPost]
-//        public async Task<RespondXinBoRuiGetTokenDTO> GetToken()
-//        {
-//            var token = await speaker.GetToken("", "");
+        /// <summary>
+        /// 获取token
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<RespondXinBoRuiGetTokenDTO> GetToken()
+        {
+            var token = await speaker.GetToken("", "");
 
-//            return token;
-//        }
+            return token;
+        }
 
 
-//    }
-//}
+    }
+}

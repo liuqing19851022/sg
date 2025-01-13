@@ -15,6 +15,7 @@ namespace MJThirdParty.Debug.Controllers
     public class IotRechargeController
     {
         private readonly IIotOmpClient client;
+        const string DefaultIcciD = "89860842102480059934";
         public IotRechargeController(IIotOmpClient client)
         {
             this.client = client;
@@ -29,11 +30,46 @@ namespace MJThirdParty.Debug.Controllers
 
         //}
 
-        //[HttpGet]
-        //public async Task GetCardListAsync()
-        //{
-        //    await this.client.GetCardListAsync();
-        //}
+        /// <summary>
+        /// 2.1.4. 资产列表 最近N天激活的卡
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<ResponseQueryCardListVO> GetCardListAsync(int day = 5)
+        {
+            return await this.client.GetCardList(new RequestQueryCardListVO { 
+                activeDateEnd = DateTime.Now,
+                activeDateStart = DateTime.Now.AddDays(day * -1),
+            });
+        }
+
+        /// <summary>
+        ///  2.1.5. 资产详细信息
+        /// </summary>
+        /// <param name="iccid"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<ResponseGetCardInfoVO> GetCardInfo(string iccid = DefaultIcciD)
+        {
+            return await this.client.GetCardInfo(new RequestGetCardInfoVO
+            {
+                iccid = iccid
+            });
+        }
+
+        /// <summary>
+        ///  2.1.6. 资产详细信息(批量)
+        /// </summary>
+        /// <param name="iccid"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<ResponseBatchGetCardsInfoVO> GetCardsInfo(string iccid = DefaultIcciD, string iccid2 = "89860842102480059935")
+        {
+            return await this.client.GetCardsInfo(new RequestBatchGetCardsInfoVO
+            {
+                iccids = new List<string> { iccid, iccid2 }
+            });
+        }
 
         /// <summary>
         /// 2.2.1. 开始生成卡列表文件
@@ -43,7 +79,11 @@ namespace MJThirdParty.Debug.Controllers
         public async Task<int> GetDownLoadCardListTask() { 
             return await this.client.GetDownLoadCardListTask();
         }
-
+        /// <summary>
+        /// 2.2.3 卡列表文件下载
+        /// </summary>
+        /// <param name="taskId"></param>
+        /// <returns></returns>
         [HttpGet]
         public async Task DownloadCardList(int taskId = 5162) {
             await this.client.DownloadCardList(taskId);
@@ -65,9 +105,11 @@ namespace MJThirdParty.Debug.Controllers
         /// <param name="request"></param>
         /// <returns></returns>
         [HttpPost]
-        public Task<ResponseGetCardSetmealProductVO> GetCardSetmealProductAsync(RequestGetCardSetmealProductVO request)
+        public Task<ResponseGetCardSetmealProductVO> GetCardSetmealProductAsync(string iccid = DefaultIcciD)
         {
-            return this.client.GetCardSetmealProductAsync(request);
+            return this.client.GetCardSetmealProductAsync(new RequestGetCardSetmealProductVO { 
+                iccid = DefaultIcciD,
+            });
         }
 
 
